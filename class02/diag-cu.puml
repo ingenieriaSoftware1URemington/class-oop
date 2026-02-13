@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Cliente" as cliente
+actor "Vendedor" as vendedor
+actor "Administrador" as admin
+
+rectangle "Sistema Concesionario" {
+    usecase "Buscar vehículos" as UC1
+    usecase "Solicitar prueba de manejo" as UC2
+    usecase "Realizar compra" as UC3
+    usecase "Gestionar inventario" as UC4
+    usecase "Generar cotización" as UC5
+    usecase "Procesar pago" as UC6
+    usecase "Ver ventas" as UC7
+}
+
+cliente --> UC1
+cliente --> UC2
+cliente --> UC3
+cliente --> UC5
+cliente --> UC6
+
+vendedor --> UC3
+vendedor --> UC5
+vendedor --> UC2
+
+admin --> UC4
+admin --> UC7
+@enduml

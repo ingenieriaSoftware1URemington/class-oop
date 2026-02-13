@@ -1,0 +1,15 @@
+@startuml Diagram
+class Persona {
+    - nombre: String
+    - edad: int
+    + saludar(): void
+}
+
+class Estudiante{
+    - identificador: int
+    - curso: String
+    + estudiar(): void
+}
+
+Estudiante --|> Persona
+@enduml

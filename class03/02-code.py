@@ -5,10 +5,11 @@ class Vehiculo:
         self.marca = marca
         self.modelo = modelo
         self.motor = motor
-    
+
     # Metodo encender
     def encender():
         print("enceder")
+
 
 # Se creo un Objeto de Tipo Vehiculo
 vehiculo1 = Vehiculo("mercedes", "2026", "v12")
